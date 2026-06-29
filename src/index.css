@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Base Styles ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply font-sans transition-colors duration-300;
+  }
+
+  /* Dark mode default */
+  .dark body {
+    background: linear-gradient(135deg, #0a0f1c 0%, #0d1326 100%);
+    color: #e2e8f0;
+  }
+
+  /* Light mode */
+  body {
+    background: linear-gradient(135deg, #f8f9fc 0%, #eef0f7 100%);
+    color: #334155;
+  }
+
+  .dark body {
+    background: linear-gradient(135deg, #0a0f1c 0%, #0d1326 100%);
+    color: #e2e8f0;
+  }
+
+  ::selection {
+    @apply bg-primary/30 text-white;
+  }
+}
+
+/* ===== Component Styles ===== */
+@layer components {
+  /* Glass card base */
+  .glass-card {
+    @apply relative rounded-2xl border transition-all duration-300;
+  }
+
+  .dark .glass-card {
+    @apply bg-white/5 border-white/10 backdrop-blur-xl;
+  }
+
+  .glass-card {
+    @apply bg-white/60 border-purple-200/30 backdrop-blur-xl;
+  }
+
+  .dark .glass-card {
+    @apply bg-white/5 border-white/10 backdrop-blur-xl;
+  }
+
+  .glass-card:hover {
+    @apply scale-[1.02] shadow-lg;
+  }
+
+  .dark .glass-card:hover {
+    @apply shadow-primary/20;
+  }
+
+  .glass-card:hover {
+    @apply shadow-primary/10;
+  }
+
+  .dark .glass-card:hover {
+    @apply shadow-primary/20;
+  }
+
+  /* Section heading */
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+
+  .section-subheading {
+    @apply text-lg max-w-2xl mx-auto mb-12;
+  }
+
+  .dark .section-subheading {
+    @apply text-gray-400;
+  }
+
+  .section-subheading {
+    @apply text-slate-500;
+  }
+
+  .dark .section-subheading {
+    @apply text-gray-400;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-primary to-secondary
+           hover:shadow-lg hover:shadow-primary/30 hover:scale-105
+           active:scale-95 transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-xl font-semibold border-2 border-primary/50 text-primary
+           hover:bg-primary/10 hover:border-primary hover:scale-105
+           active:scale-95 transition-all duration-300;
+  }
+
+  /* Glow effects */
+  .glow-ring {
+    @apply absolute inset-0 rounded-full;
+    background: conic-gradient(from 0deg, #7c3aed, #3b82f6, #7c3aed);
+    animation: glow-rotate 4s linear infinite;
+    filter: blur(8px);
+  }
+
+  .dark .glow-ring {
+    opacity: 0.6;
+  }
+
+  .glow-ring {
+    opacity: 0.3;
+  }
+
+  .dark .glow-ring {
+    opacity: 0.6;
+  }
+
+  /* Navbar glass effect */
+  .nav-glass {
+    @apply backdrop-blur-xl border-b transition-all duration-300;
+  }
+
+  .dark .nav-glass {
+    @apply bg-dark/80 border-white/10;
+  }
+
+  .nav-glass {
+    @apply bg-white/70 border-gray-200/50;
+  }
+
+  .dark .nav-glass {
+    @apply bg-dark/80 border-white/10;
+  }
+
+  /* Tag/badge */
+  .tech-tag {
+    @apply px-3 py-1 text-xs font-medium rounded-full transition-colors duration-200;
+  }
+
+  .dark .tech-tag {
+    @apply bg-primary/20 text-primary-300 border border-primary/30;
+  }
+
+  .tech-tag {
+    @apply bg-primary/10 text-primary-600 border border-primary/20;
+  }
+
+  .dark .tech-tag {
+    @apply bg-primary/20 text-primary-300 border border-primary/30;
+  }
+}
+
+/* ===== Utilities ===== */
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0f1c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #7c3aed, #3b82f6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #6d28d9, #2563eb);
+}
