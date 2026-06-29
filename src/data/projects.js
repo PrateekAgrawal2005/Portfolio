@@ -21,7 +21,7 @@ const projects = [
       'An accessibility-focused application designed to break communication barriers and provide inclusive digital experiences. Deployed across multiple cloud platforms including AWS, Vercel, and Render for high availability and reliability.',
     tech: ['Python', 'AWS', 'Vercel', 'Render', 'Streamlit'],
     github: '#',
-    live: 'https://lnkd.in/d7RWAJf9',
+    live: 'https://www.vaaniseva.me/',
   },
   {
     title: 'Codespire',
