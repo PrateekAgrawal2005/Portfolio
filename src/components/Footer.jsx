@@ -30,7 +30,7 @@ export default function Footer() {
               <SiGithub className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/prateek-agrawal"
+              href="https://www.linkedin.com/in/prateek-agrawal-311744333/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg transition-all duration-300

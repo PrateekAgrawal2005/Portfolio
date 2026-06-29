@@ -56,7 +56,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://linkedin.com/in/prateek-agrawal"
+                href="https://www.linkedin.com/in/prateek-agrawal-311744333/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 text-base md:text-lg transition-colors duration-200
@@ -64,7 +64,7 @@ export default function Contact() {
                            text-slate-600 hover:text-slate-900"
               >
                 <FaLinkedinIn className="w-5 h-5 text-primary" />
-                linkedin.com/in/prateek-agrawal
+                linkedin.com/in/prateek-agrawal-311744333
               </a>
             </div>
 
