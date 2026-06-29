@@ -12,7 +12,7 @@ const projects = [
     description:
       'An intelligent code analysis tool that evaluates code quality, detects logic errors, and suggests improvements for cleaner, more maintainable code. Designed to streamline the review process and help developers write better software faster.',
     tech: ['Python', 'AI/ML', 'Code Analysis'],
-    github: '#',
+    github: 'https://github.com/PrateekAgrawal2005/Code-review',
     live: '#',
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     description:
       'An accessibility-focused application designed to break communication barriers and provide inclusive digital experiences. Deployed across multiple cloud platforms including AWS, Vercel, and Render for high availability and reliability.',
     tech: ['Python', 'AWS', 'Vercel', 'Render', 'Streamlit'],
-    github: '#',
+    github: 'https://github.com/makekush7-netizen/VaaniSeva',
     live: 'https://www.vaaniseva.me/',
   },
   {
