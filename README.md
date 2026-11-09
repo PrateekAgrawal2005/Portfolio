@@ -2,6 +2,10 @@
 
 A modern, responsive personal portfolio website built with React, Vite, Tailwind CSS, and Framer Motion.
 
+## Project Status
+
+This portfolio is actively maintained and updated as new projects, skills, and achievements are added.
+
 ## Features
 
 - **Dark/Light Mode** — Toggle between dark and light themes with smooth transitions
